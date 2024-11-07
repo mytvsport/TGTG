@@ -1,0 +1,22 @@
+{
+    "name": "Too Good To Go",
+    "short_name": "Too Good To Go",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fffcf9",
+    "theme_color": "#007a74",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "logo.jpg",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "logo.jpg",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
