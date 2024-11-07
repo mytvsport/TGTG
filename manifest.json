@@ -1,7 +1,7 @@
 {
     "name": "Too Good To Go",
     "short_name": "Too Good To Go",
-    "start_url": "/TGTG/TGTG.html",
+    "start_url": "mytvsport/TGTG/TGTG.html",
     "display": "standalone",
     "background_color": "#fffcf9",
     "theme_color": "#007a74",
