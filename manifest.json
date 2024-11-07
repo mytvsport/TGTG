@@ -1,7 +1,7 @@
 {
     "name": "Too Good To Go",
     "short_name": "Too Good To Go",
-    "start_url": "https://mytvsport.github.io/TGTG/",
+    "start_url": "TGTG.html",
     "display": "standalone",
     "background_color": "#fffcf9",
     "theme_color": "#fffcf9",
