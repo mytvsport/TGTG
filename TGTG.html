@@ -31,7 +31,7 @@
             text-align: center;
             margin-bottom: 10px;
             position: relative;
-            top: -25px;
+            top: -5px;
             color: #2f2f2d;
         }
 
@@ -371,10 +371,10 @@
     </style>
 </head>
 <body>
-
-    <div style="margin-top: 250px;" class="reservation-container">
+    
+    <div style="margin-top: 10px;" class="reservation-container">
         <!-- En-tête -->
-        <img style="max-width: 9%; height: auto; position: absolute; top: 113px; left: 25px;" src="fleche.JPG" alt="">
+        <img style="max-width: 9%; height: auto; position: absolute; top: 34px; left: 25px;" src="fleche.JPG" alt="">
         <div class="header">Votre réservation</div>
 
         <div class="box">
@@ -386,7 +386,7 @@
                 <img style="max-width: 55%; height: auto;" src="loc.JPG" alt="">
             </div>
         </div>
-
+        
         <!-- Informations de réservation -->
         <div class="reservation-details">
             <img style="max-width: 100%; height: auto;" src="2.jpeg" alt="">
@@ -407,7 +407,7 @@
                 <span>1 x Panier Surprise</span>
                 <span>5,00 €</span>
             </div>
-
+            
         </div>
         <img style="width: 334px; height: auto; position:relative; right: 5px; bottom:-3px;" src="3f.png" alt="">
 
@@ -416,7 +416,7 @@
             <img style="max-width: 97%; height: auto; position: relative; top: -159px; left: 6px;" src="bc.png" alt="">
         </a>
 
-
+        
         <!-- Box2 positionnée devant tout le script -->
         <div class="box2" id="box2">
             <span class="close-btn" onclick="closeBox('.box2')">X</span>
@@ -429,7 +429,6 @@
             <div class="instructions">
                 Validez ci-dessous et montrez l'écran au commerçant. Assurez-vous de ne confirmer qu'une fois que vous êtes chez le commerçant pour récupérer votre panier.
             </div>
-            <img style="max-width: 18%; height: auto; position: absolute; z-index: 11; top: 307px; left: 34px;" src="bs.png" alt="">
             <img style="max-width: 18%; height: auto; position: absolute; z-index: 11; top: 309px; left: 34px;" src="bs.png" alt="">
             <a href="#" id="showBoxButton2" class="validate-button">Valider pour collecter</a>
         </div>
@@ -452,7 +451,7 @@
     </div>
 
     <script>
-
+        
         // JavaScript pour afficher la box2 avec animation
         document.getElementById('showBoxButton').addEventListener('click', function(event) {
             event.preventDefault(); // Empêche l'action par défaut (par exemple la redirection si c'est un lien)
