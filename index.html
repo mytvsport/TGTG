@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Couleurs de base */
+        body {
+            font-family: Tenon, sans-serif;
+            background-color: #fffcf9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Conteneur principal */
+        .reservation-container {
+            max-width: 400px;
+            width: 90%;
+            background-color: #fffcf9;
+        }
+
+        /* En-tête */
+        .header {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            top: -25px;
+            color: #2f2f2d;
+        }
+
+        /* Informations du commerce */
+        .store-info {
+            text-align: center;
+            margin-bottom: 3px;
+        }
+
+        .store-info img {
+            height: 40px;
+        }
+
+        .store-info h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .store-info p {
+            font-size: 13px;
+            color: #666;
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        .find-store {
+            color: #007a74;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Informations de réservation */
+        .reservation-details {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+            position: relative;
+            top: 20px;
+        }
+
+        .reservation-details h3 {
+            color: #007a74;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .details span {
+            color: #333;
+        }
+
+        /* Infos de collecte */
+        .collect-info {
+            font-size: 13px;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        /* Bouton */
+        .collect-button {
+            display: block;
+            background-color: #007a74;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .details span .bold-text {
+            color: #747675;
+        }
+        /* Texte en gras */
+        .bold-text {
+            font-weight: bold;
+            color: #747675;
+        }
+
+        .box{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            padding: 10px;
+            position: relative;
+            top: 0px;
+        }
+
+        h2{
+            letter-spacing: -0.5px; /* Rapproche les lettres de 1 pixel */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="reservation-container">
+        <!-- En-tête -->
+        <img style="max-width: 9%; height: auto; position: absolute; top: 15px; left: 25px;" src="fleche.JPG" alt="">
+        <div class="header">Votre réservation</div>
+
+        <div class="box">
+            <!-- Informations du commerce -->
+            <div class="store-info">
+                <img src="logo.png" alt="Logo Brioche Dorée">
+                <h2>Brioche Dorée - Gare de Lyon (Hall 3)</h2>
+                <p>Place Louis-Armand, 75571 Paris, France</p>
+                <img style="max-width: 55%; height: auto;" src="loc.JPG" alt="">
+            </div>
+        </div>
+        
+        <!-- Informations de réservation -->
+        <div class="reservation-details">
+            <img style="max-width: 100%; height: auto;" src="2.jpeg" alt="">
+            <div class="details">
+                <span style="color: #747675; font-size: smaller; font-weight: lighter;" class="bold-text">DATE</span>
+                <span style="color: #747675; font-size: smaller; font-weight: lighter; position:relative;" class="bold-text">HEURE DE COLLECTE</span>
+            </div>
+            <div style="position:relative; top:-7px; margin-bottom: 5px;" class="details">
+                <span>6 novembre 2024</span>
+                <span>17:00 - 20:00</span>
+            </div>
+            <div style="margin-top: 10px;" class="details">
+                <span style="color: #747675; font-size: smaller; font-weight: lighter;" class="bold-text">PANIER SURPRISE</span>
+                <span style="color: #747675; font-size: smaller; font-weight: lighter; position:relative;" class="bold-text">TOTAL</span>
+
+            </div>
+            <div style="position:relative; top:-7px" class="details">
+                <span>1 x Panier Surprise</span>
+                <span>5,00 €</span>
+            </div>
+            
+        </div>
+        <img style="max-width: 110%; height: auto; position:relative; right: 16px; bottom:-3px;" src="3f.png" alt="">
+
+        <!-- Bouton de collecte -->
+        <a href=""> <!-- Remplacez l'URL par celle de votre choix -->
+            <img style="max-width: 97%; height: auto; position: relative; top: -159px; left: 6px;" src="bc.png" alt="">
+        </a>
+        
+    </div>
+</body>
+</html>
