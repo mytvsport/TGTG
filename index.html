@@ -14,7 +14,6 @@
             align-items: center;
             height: 100vh;
             overflow-x: hidden;
-
         }
 
         /* Conteneur principal */
@@ -138,6 +137,236 @@
         h2{
             letter-spacing: -0.5px; /* Rapproche les lettres de 1 pixel */
         }
+
+        /* Styles pour box2 */
+        /* Box2 positionnée devant tout le script */
+        .box2 {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            top: 100%; /* Position initiale en dehors de la page */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            width: 90%;
+            max-width: 400px;
+            opacity: 0; /* Invisible au début */
+            transition: top 0.5s ease, opacity 0.3s ease; /* Animation de l'élévation et de l'opacité */
+        }
+
+        .box2.show {
+            top: 50%; /* Position normale */
+            opacity: 1; /* Visible */
+            top: 51%;
+        }
+
+
+        .box2 h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .box2 .quantity-circle {
+            background-color: #007a74;
+            color: white;
+            font-weight: 900;
+            font-size: 22px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px auto;
+        }
+
+        .box2 .description {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .box2 .location {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .box2 .code-box {
+            background-color: #007a74;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 8px;
+            padding-left: 11px;
+            padding-right: 11px;
+            border-radius: 5px;
+            margin: 15px 0;
+            display: inline-block;
+        }
+
+        .box2 .instructions {
+            font-size: 12px;
+            color: #666;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .box2 .validate-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #007a74;
+            font-size: 14px;
+            font-weight: bold;
+            border: 2px solid #007a74;
+            border-radius: 25px;
+            padding: 15px 68px;
+            text-decoration: none;
+            width: fit-content;
+            margin: 15px auto 0;
+            margin-bottom: 100px;
+        }
+
+        .separator {
+            border-top: 1px solid #d3d3d3; /* Gris clair */
+            margin: 5px 0; /* Espacement autour du trait */
+        }
+
+        .box3 {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            top: 100%; /* Position initiale en dehors de la page */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            width: 90%;
+            max-width: 400px;
+            opacity: 0; /* Invisible au début */
+            transition: top 0.5s ease, opacity 0.3s ease; /* Animation de l'élévation et de l'opacité */
+        }
+
+        .box3.show {
+            top: 50%; /* Position normale */
+            opacity: 1; /* Visible */
+            top: 48%;
+        }
+
+
+        .box3 h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .box3 .quantity-circle {
+            background-color: #007a74;
+            color: white;
+            font-weight: 900;
+            font-size: 22px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px auto;
+        }
+
+        .box3 .description {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .box3 .location {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .box3 .code-box {
+            background-color: #007a74;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 8px;
+            padding-left: 11px;
+            padding-right: 11px;
+            border-radius: 5px;
+            margin: 15px 0;
+            display: inline-block;
+        }
+
+        .box3 .instructions {
+            font-size: 12px;
+            color: #666;
+            margin: 5px 40px;
+            line-height: 1.5;
+            margin-bottom: 100px;
+        }
+
+        .box3 .validate-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #007a74;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            width: fit-content;
+            margin: 5px auto 0;
+        }
+
+        /* Cercle animé centré */
+        .box3 .animated-circle {
+            width: 15px; /* Taille initiale du cercle */
+            height: 15px; /* Taille initiale du cercle */
+            border: 3px solid #26554e; /* Bord vert */
+            border-radius: 50%; /* Rendre l'élément rond */
+            animation: waveAnimation 1.5s infinite; /* L'animation dure 2 secondes et se répète indéfiniment */
+            position: absolute; /* Position absolue pour permettre un placement fixe */
+            top: 56.3%; /* Positionne le cercle verticalement à 50% de la hauteur de la page */
+            left: 50%; /* Positionne le cercle horizontalement à 50% de la largeur de la page */
+            transform: translate(-50%, -50%); /* Ajuste le cercle pour que son centre soit exactement au centre de la page */
+            z-index: 11;
+        }
+
+        /* Animation du cercle */
+        @keyframes waveAnimation {
+            0% {
+                width: 15px; /* Taille initiale */
+                height: 15px; /* Taille initiale */
+                border-width: 7px; /* Bord initial */
+            }
+            100% {
+                width: 68px; /* Augmente la taille du cercle */
+                height: 68px; /* Augmente la taille du cercle */
+                border-width: 0px; /* Réduit la largeur du bord */
+            }
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 22px;
+            right: 26px;
+            font-size: 15px;
+            color: black;
+            cursor: pointer;
+            z-index: 13;
+        }
     </style>
 </head>
 <body>
@@ -182,10 +411,62 @@
         <img style="width: 334px; height: auto; position:relative; right: 5px; bottom:-3px;" src="3f.png" alt="">
 
         <!-- Bouton de collecte -->
-        <a href=""> <!-- Remplacez l'URL par celle de votre choix -->
+        <a href="#" id="showBoxButton"> <!-- Remplacez l'URL par celle de votre choix -->
             <img style="max-width: 97%; height: auto; position: relative; top: -159px; left: 6px;" src="bc.png" alt="">
         </a>
+
         
+        <!-- Box2 positionnée devant tout le script -->
+        <div class="box2" id="box2">
+            <span class="close-btn" onclick="closeBox('.box2')">X</span>
+            <h2>Commande à récupérer</h2>
+            <div class="quantity-circle">1x</div>
+            <div class="description">Panier Surprise</div>
+            <div class="location">Brioche Dorée - Gare de Lyon (Hall 3)</div>
+            <div class="code-box">N3BFHD48DB1S0</div>
+            <div class="separator"></div>
+            <div class="instructions">
+                Validez ci-dessous et montrez l'écran au commerçant. Assurez-vous de ne confirmer qu'une fois que vous êtes chez le commerçant pour récupérer votre panier.
+            </div>
+            <img style="max-width: 18%; height: auto; position: absolute; z-index: 11; top: 307px; left: 34px;" src="bs.png" alt="">
+            <a href="#" id="showBoxButton2" class="validate-button">Valider pour collecter</a>
+        </div>
+
+        <div class="box3" id="box3">
+            <span class="close-btn" onclick="closeBox('.box3')">X</span>
+            <h2>Commande à récupérer</h2>
+            <div class="quantity-circle">1x</div>
+            <div class="description">Panier Surprise</div>
+            <div class="location">Brioche Dorée - Gare de Lyon (Hall 3)</div>
+            <div class="code-box">N3BFHD48DB1S0</div>
+            <div class="separator"></div>
+            <div class="animated-circle"></div>
+            <img style="width: 22%; height: auto; position:relative; margin-top: 14px; z-index: 14;" src="check.png" alt="">
+            <a href="#" class="validate-button">Collecte confirmée</a>
+            <div class="instructions">
+                Montrez l'écran au commerçant pour récupérer votre pannier !
+            </div>            
+        </div>
     </div>
+
+    <script>
+        
+        // JavaScript pour afficher la box2 avec animation
+        document.getElementById('showBoxButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Empêche l'action par défaut (par exemple la redirection si c'est un lien)
+            document.getElementById('box2').classList.add('show');
+        });
+
+        document.getElementById('showBoxButton2').addEventListener('click', function(event) {
+            event.preventDefault(); // Empêche l'action par défaut (par exemple la redirection si c'est un lien)
+            document.getElementById('box3').classList.add('show');
+        });
+        function closeBox(boxClass) {
+            const box = document.querySelector(boxClass);
+            if (box) {
+                box.style.display = 'none'; // Cache la boîte
+            }
+        }
+    </script>
 </body>
 </html>
