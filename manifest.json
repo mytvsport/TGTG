@@ -4,7 +4,7 @@
     "start_url": "mytvsport/TGTG/TGTG.html",
     "display": "standalone",
     "background_color": "#fffcf9",
-    "theme_color": "#007a74",
+    "theme_color": "#fffcf9",
     "orientation": "portrait",
     "icons": [
       {
